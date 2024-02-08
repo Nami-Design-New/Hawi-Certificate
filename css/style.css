@@ -38,6 +38,7 @@ body::after {
   border: 1px solid #f0901f;
   border-radius: 12px;
   mix-blend-mode: multiply;
+  pointer-events: none;
 }
 
 header {
@@ -106,10 +107,11 @@ main .text {
 main .text p {
   color: #908e8b;
   font-size: 16px;
-  line-height: 32px;
+  line-height: 28px;
 }
 main .text p b {
-  color: #606060;
+  color: #000000;
+  line-height: inherit;
 }
 main .text .head {
   border-bottom: 1px solid #d9d9d9;
@@ -131,7 +133,7 @@ main .text:nth-child(2) {
 }
 main .text:nth-child(2) P {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 22px;
 }
 main .text:nth-child(2) .head p {
   font-size: 14px;
@@ -168,7 +170,7 @@ footer .card ul {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  gap: 8px;
+  gap: 2px;
 }
 footer .card ul li {
   display: flex;
@@ -184,10 +186,12 @@ footer .card ul li .label {
   background: #fff;
   border-radius: 8px;
   color: #000;
+  line-height: 28px;
 }
 footer .card ul li p {
   color: #fff;
   font-size: 12px;
+  line-height: 28px;
 }
 footer .card.second ul li {
   flex-direction: row-reverse;
